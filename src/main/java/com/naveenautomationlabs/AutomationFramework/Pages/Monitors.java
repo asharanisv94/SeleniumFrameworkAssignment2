@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.naveenautomationlabs.AutomationFramework.base.TestBase;
 
 public class Monitors extends TestBase {
-	
 
 	public Monitors() {
 		PageFactory.initElements(wd, this);
@@ -23,7 +22,5 @@ public class Monitors extends TestBase {
 	public String getMonitorText() {
 		return monitorsText.getText();
 	}
-
-	
 
 }

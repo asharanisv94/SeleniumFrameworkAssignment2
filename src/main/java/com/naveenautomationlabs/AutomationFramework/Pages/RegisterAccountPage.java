@@ -1,10 +1,9 @@
 package com.naveenautomationlabs.AutomationFramework.Pages;
 
-import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.naveenautomationlabs.AutomationFramework.base.TestBase;
 
@@ -41,31 +40,37 @@ public class RegisterAccountPage extends TestBase {
 
 
 	public void fillFirstName(String name) {
+		wait.until(ExpectedConditions.visibilityOf(firstNameField));
 		firstNameField.sendKeys(name);
 
 	}
 
 	public void filllastName(String name) {
+		wait.until(ExpectedConditions.visibilityOf(lastNameField));
 		lastNameField.sendKeys(name);
 
 	}
 
 	public void fillemail(String name) {
+		wait.until(ExpectedConditions.visibilityOf(emailField));
 		emailField.sendKeys(name);
 
 	}
 
 	public void fillPassword(String password) {
+		wait.until(ExpectedConditions.visibilityOf(passwordField));
 		passwordField.sendKeys(password);
 
 	}
 
 	public void filltelephone(String password) {
+		wait.until(ExpectedConditions.visibilityOf(telephoneField));
 		telephoneField.sendKeys(password);
 
 	}
 
 	public void fillConfirmPassword(String password) {
+		wait.until(ExpectedConditions.visibilityOf(confirmPasswordField));
 		confirmPasswordField.sendKeys(password);
 
 	}

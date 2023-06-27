@@ -13,10 +13,10 @@ public class ForgotYourPassword extends TestBase {
 	}
 
 	@FindBy(id = "input-email")
-	WebElement emailInputField;
+	private WebElement emailInputField;
 
 	@FindBy(css = "input[value='Continue']")
-	WebElement continueBtn;
+	private WebElement continueBtn;
 
 	public void enterEmail() {
 		emailInputField.sendKeys("tony@gmail.com");

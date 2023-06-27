@@ -13,7 +13,7 @@ public class AccountLogout extends TestBase {
 	}
 
 	@FindBy(css="#content > h1")
-	WebElement accountLogoutMsg;
+	private WebElement accountLogoutMsg;
 
 	
 

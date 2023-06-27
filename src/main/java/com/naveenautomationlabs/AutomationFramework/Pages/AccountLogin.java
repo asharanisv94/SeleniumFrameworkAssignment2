@@ -35,7 +35,7 @@ public class AccountLogin extends TestBase {
 
 	
 	public void enterEmail() {
-		emailInputField.sendKeys("tony@gmail.com");
+		emailInputField.sendKeys("xyz100@gmail.com");
 	}
 
 	public void enterEmail(String email) {

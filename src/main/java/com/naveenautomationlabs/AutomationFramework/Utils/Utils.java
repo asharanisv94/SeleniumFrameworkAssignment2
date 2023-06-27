@@ -14,17 +14,27 @@ import com.naveenautomationlabs.AutomationFramework.base.TestBase;
 public class Utils extends TestBase {
 
 	public static void takeScreenShot(String testName) {
-		//Time stamp
+		// Time stamp
 		String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
 
-		//Take screenshot
+		// Take screenshot
 		File screenshotFile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-		
-		//Save screenshot
+
+		// Save screenshot
 		try {
-		FileUtils.copyFile(screenshotFile, new File("./FailedTestsScreenShots\\" + "_" + testName + "_" + timeStamp + ".jpg"));
-		}catch (IOException e) {
+			FileUtils.copyFile(screenshotFile,
+					new File("./FailedTestsScreenShots\\" + "_" + testName + "_" + timeStamp + ".jpg"));
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+
+	public static void sleep(int seconds) {
+		try {
+			Thread.sleep(seconds);
+		} catch (InterruptedException e) {
+
+		}
+	}
+
 }

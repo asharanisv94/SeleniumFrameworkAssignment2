@@ -13,25 +13,40 @@ public class Macbook extends TestBase {
 	}
 
 	@FindBy(css = "#content > div > div.col-sm-4 > div.btn-group > button:nth-child(1) > i")
-	WebElement addToWishListButton  ;
+	private WebElement addToWishListButton  ;
 	
 	@FindBy(css="#product-product > div.alert.alert-success.alert-dismissible")
-	WebElement successBanner;
+	private WebElement successBanner;
 
 	
 
-	public Macbook clickaddToCartButton() {
+	public Macbook clickaddToWishListButton() {
 		addToWishListButton.click();
 		return new Macbook();
 	}
 		
 		public String getSuccessMsg() {
 			return successBanner.getText();
-		
 		}
+		
 		
 		public String getTitle() {
 			return wd.getTitle();
 		
 		}
+		
+		
+		@FindBy(xpath = "//*[@id=\"wishlist-total\"]/span")
+		private WebElement wishList;
+
+		
+		public String getwishTotalCount() throws InterruptedException {
+
+			String itemText = wishList.getText();
+			String itemsInArray[] = itemText.split("\\(");
+			String[] total = itemsInArray[1].split("\\)");
+			return total[0];
+		}
+
+		
 	}

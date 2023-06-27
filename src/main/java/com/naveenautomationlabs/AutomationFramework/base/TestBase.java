@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 
 import com.naveenautomationlabs.AutomationFramework.Listeners.WebdriverEvents;
@@ -25,6 +26,7 @@ public class TestBase {
 	public static Logger logger;
 	private WebdriverEvents events;
 	private EventFiringWebDriver eDriver;
+	public static WebDriverWait wait;
 
 	public TestBase() {
 		prop = new Properties();
@@ -76,7 +78,13 @@ public class TestBase {
 
 		wd.get(prop.getProperty("URL"));
 		wd.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("IMPLICT_WAIT")), TimeUnit.SECONDS);
+		
 		wd.manage().window().maximize();
+		
+		
+		wd.get(prop.getProperty("URL"));
+		wait = new WebDriverWait(wd, Long.parseLong(prop.getProperty("EXPLICIT_WAIT")));
+
 	}
 
 	public void tearDown() {

@@ -1,16 +1,17 @@
 package com.naveenautomationlabs.AutomationFramework.Pages;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.interactions.Actions;
 
 import com.naveenautomationlabs.AutomationFramework.Utils.Utils;
 import com.naveenautomationlabs.AutomationFramework.base.TestBase;
-import java.util.*;
 
 public class YourStore extends TestBase {
 
@@ -55,16 +56,17 @@ public class YourStore extends TestBase {
 	// To search for iphone and macbook
 
 	@FindBy(css = "#search > input")
-	WebElement searchInput;
+	private WebElement searchInput;
 
 	@FindBy(css = "#search > span > button")
-	WebElement searchButton;
+	private WebElement searchButton;
 
 	public void searchInput(String productName) {
 		searchInput.sendKeys(productName);
 	}
 
 	public Search_Iphone clickiphoneSearchBtn() {
+		wait.until(ExpectedConditions.visibilityOf(searchButton));
 		searchButton.click();
 		return new Search_Iphone();
 	}
@@ -73,9 +75,6 @@ public class YourStore extends TestBase {
 		searchButton.click();
 		return new Search_Macbook();
 	}
-
-	@FindBy(css = "#carousel0 > div > div:nth-child(10) > img")
-	private WebElement BurgerKing;
 
 	@FindBy(css = "#top-links ul:first-of-type ul >li:first-of-type a")
 	private WebElement registerButton;
@@ -86,7 +85,7 @@ public class YourStore extends TestBase {
 	}
 
 	@FindBy(xpath = "//*[@id='content']//h4/a")
-	List<WebElement> products;
+	private List<WebElement> products;
 
 	public Macbook clickAProduct(String productName) {
 
@@ -113,4 +112,23 @@ public class YourStore extends TestBase {
 		}
 		return set;
 	}
+
+	@FindBy(xpath = "//*[@id=\"content\"]//div/button[2]")
+	private List<WebElement> ItemsforWishList;
+
+	@FindBy(xpath = "//*[@id=\"wishlist-total\"]/span")
+	private WebElement wishList;
+
+	public String getwishTotal(int count) throws InterruptedException {
+
+		for (int i = 0; i < count; i++) {
+			ItemsforWishList.get(i).click();
+		}
+		Utils.sleep(3000);
+		String itemText = wishList.getText();
+		String itemsInArray[] = itemText.split("\\("); 
+		String[] total = itemsInArray[1].split("\\)");
+		return total[0];
+	}
+
 }

@@ -15,10 +15,10 @@ public class Iphone extends TestBase {
 	
 
 	@FindBy(css = "button[id=button-cart]")
-	WebElement addToCartButton  ;
+	private WebElement addToCartButton  ;
 	
 	@FindBy(css="#product-product > div.alert.alert-success.alert-dismissible")
-	WebElement successBanner;
+	private WebElement successBanner;
 
 	
 

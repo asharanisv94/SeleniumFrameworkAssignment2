@@ -12,9 +12,9 @@ public class Search_Macbook extends TestBase {
 		PageFactory.initElements(wd, this);
 	}
 
-	@FindBy(xpath= "//a[text()='MacBook']")
+	@FindBy(xpath= "//h4/a[text()='MacBook']")
 	
-	WebElement productLink;
+	private WebElement productLink;
 
 	
 
