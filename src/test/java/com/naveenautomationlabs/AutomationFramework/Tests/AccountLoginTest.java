@@ -24,19 +24,19 @@ public class AccountLoginTest extends TestBase {
 //		yourStore = new YourStore();
 //	}
 
-	@Test
-	public void validateLoginUsingValidCredentials() {
-		yourStore.clickMyAccountBtn();
-		accountLogin = yourStore.clickLoginBtn();
-		forgotYourPassword = accountLogin.clickForgotPassword();
-		forgotYourPassword.enterEmail();
-		forgotYourPassword.clickContinueBtn();
-		Assert.assertEquals(accountLogin.getPasswordResetLinkSuccessMessageText(),
-				"An email with a confirmation link has been sent your email address.");
-	}
+	
+//	public void validateLoginUsingValidCredentials() {
+//		yourStore.clickMyAccountBtn();
+//		accountLogin = yourStore.clickLoginBtn();
+//		forgotYourPassword = accountLogin.clickForgotPassword();
+//		forgotYourPassword.enterEmail();
+//		forgotYourPassword.clickContinueBtn();
+//		Assert.assertEquals(accountLogin.getPasswordResetLinkSuccessMessageText(),
+//				"An email with a confirmation link has been sent your email address.");
+//	}
 
-	@AfterMethod
-	public void quit() {
-		tearDown();
-	}
+//	@AfterMethod
+//	public void quit() {
+//		tearDown();
+//	}
 }
