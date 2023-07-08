@@ -35,7 +35,7 @@ public class AccountLogin extends TestBase {
 
 	
 	public void enterEmail() {
-		emailInputField.sendKeys("xyz100@gmail.com");
+		emailInputField.sendKeys("tony@gmail.com");
 	}
 
 	public void enterEmail(String email) {
@@ -50,7 +50,7 @@ public class AccountLogin extends TestBase {
 		passwordInputField.sendKeys(password);
 	}
 
-	private MyAccount clickLoginBtn() {
+	public MyAccount clickLoginBtn() {
 		loginBtn.click();
 		return new MyAccount();
 	}

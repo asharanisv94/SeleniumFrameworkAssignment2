@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 
 import com.naveenautomationlabs.AutomationFramework.Listeners.WebdriverEvents;
+import com.naveenautomationlabs.AutomationFramework.Utils.Browsers;
+import com.naveenautomationlabs.AutomationFramework.Utils.Environment;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -27,6 +29,9 @@ public class TestBase {
 	private WebdriverEvents events;
 	private EventFiringWebDriver eDriver;
 	public static WebDriverWait wait;
+	private Browsers BROWSER=Browsers.CHROME;
+	private Environment ENV=Environment.PROD;
+	
 
 	public TestBase() {
 		prop = new Properties();
@@ -53,9 +58,9 @@ public class TestBase {
 	}
 
 	public void intialisation() {
-		String browserName = prop.getProperty("browser");
-		switch (browserName) {
-		case "chrome":
+		
+		switch (BROWSER.getBrowserName()) {
+		case "Chrome":
 			wd = WebDriverManager.chromedriver().create();
 			break;
 		case "Edge":
@@ -76,18 +81,22 @@ public class TestBase {
 		eDriver.register(events);
 		wd = eDriver;
 
-		wd.get(prop.getProperty("URL"));
-		wd.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("IMPLICT_WAIT")), TimeUnit.SECONDS);
+		wd.get(ENV.getUrl());
+		
+		
+		
+		
+	
+wd.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("IMPLICT_WAIT")), TimeUnit.SECONDS);
 		
 		wd.manage().window().maximize();
 		
-		
-		wd.get(prop.getProperty("URL"));
-		wait = new WebDriverWait(wd, Long.parseLong(prop.getProperty("EXPLICIT_WAIT")));
-
+				
+		wait = new WebDriverWait(wd, Long.parseLong(prop.getProperty("EXPLICIT_WAIT")));   
 	}
 
 	public void tearDown() {
 		wd.quit();
 	}
 }
+

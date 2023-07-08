@@ -20,6 +20,10 @@ public class MyAccount extends TestBase {
 
 	@FindBy(xpath = "//div[@class='list-group']//a")
 	private List<WebElement> navigationListElements;
+	
+
+	@FindBy(css = "ul.list-inline>li:nth-of-type(3)")
+	private WebElement wishListBtn;
 
 	public String getMyAccountText() {
 		return myAccountText.getText();
@@ -36,5 +40,10 @@ public class MyAccount extends TestBase {
 			throw new NoSuchElementException();
 		}
 		return new AccountLogout();
+	}
+
+	public MyWishList clickWishListBtn() {
+		wishListBtn.click();
+		return  new MyWishList();
 	}
 }
