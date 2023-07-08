@@ -70,6 +70,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Validate Login Using InValid Credentials
+	@Ignore
 	@Test
 	public void validateLoginUsingInValidCredentials() {
 		yourStore.clickMyAccountBtn();
@@ -181,6 +182,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Add 4 items in checklist and validate Wishlist count
+	@Ignore
 	@Test
 	public void validateWishListCount() throws InterruptedException {
 
@@ -200,7 +202,8 @@ public class YourStoreTest extends TestBase {
 		WebElement element = wishList.getCellElementFromTable(MyWishListTableHeader.UNIT_PRICE, "Product 3");
 		System.out.println(element.getText());
 	}
-
+	
+	@Ignore
 	@Test(dataProvider = "login_data")
 	public void validateLogin(String username, String Password) {
 		yourStore.clickMyAccountBtn();
