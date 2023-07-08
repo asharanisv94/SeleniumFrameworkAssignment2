@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.naveenautomationlabs.AutomationFramework.Pages.AccountLogin;
@@ -43,9 +44,10 @@ public class YourStoreTest extends TestBase {
 	private AccountLogout accountLogout;
 	private MyWishList wishList;
 
+	@Parameters({ "browser" })
 	@BeforeMethod
-	public void setUp() {
-		intialisation();
+	public void setUp(String browser) {
+		intialisation(browser);
 		yourStore = new YourStore();
 
 	}

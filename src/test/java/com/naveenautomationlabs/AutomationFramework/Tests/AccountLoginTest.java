@@ -17,12 +17,12 @@ public class AccountLoginTest extends TestBase {
 	AccountLogin accountLogin;
 	ForgotYourPassword forgotYourPassword;
 
-	@BeforeMethod
-	public void setUp() {
-//		Utils.takeScreenShot();
-		intialisation();
-		yourStore = new YourStore();
-	}
+////	@BeforeMethod
+//	public void setUp() {
+////		Utils.takeScreenShot();
+////		intialisation();
+//		yourStore = new YourStore();
+//	}
 
 	@Test
 	public void validateLoginUsingValidCredentials() {

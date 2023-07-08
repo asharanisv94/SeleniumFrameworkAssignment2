@@ -15,7 +15,7 @@
 		<classes>
 			<class
 				name="com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest" />
-			<parameter name="browser" value="chrome" />
+			<parameter name="browser" value="Chrome" />
 
 
 		</classes>
