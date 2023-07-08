@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-05T15:44:02 EDT" name="Suite" finished-at="2023-07-05T15:45:08 EDT" duration-ms="65415">
+    <groups>
+    </groups>
+    <test started-at="2023-07-05T15:44:02 EDT" name="Test" finished-at="2023-07-05T15:45:08 EDT" duration-ms="65415">
+      <class name="com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest">
+        <test-method is-config="true" signature="setUpLogger()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:02 EDT" name="setUpLogger" finished-at="2023-07-05T15:44:03 EDT" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLogger -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:03 EDT" name="setUp" finished-at="2023-07-05T15:44:07 EDT" duration-ms="4838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIPhoneAddedToCartSuccessfully()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:07 EDT" name="validateIPhoneAddedToCartSuccessfully" finished-at="2023-07-05T15:44:10 EDT" duration-ms="2445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIPhoneAddedToCartSuccessfully -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:10 EDT" name="quit" finished-at="2023-07-05T15:44:10 EDT" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:10 EDT" name="setUp" finished-at="2023-07-05T15:44:14 EDT" duration-ms="4158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIfCorrectProductIsClicked()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:14 EDT" name="validateIfCorrectProductIsClicked" finished-at="2023-07-05T15:44:32 EDT" duration-ms="17608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfCorrectProductIsClicked -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:32 EDT" name="quit" finished-at="2023-07-05T15:44:32 EDT" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="validateLogin(java.lang.String, java.lang.String)[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:32 EDT" name="validateLogin" data-provider="login_data" finished-at="2023-07-05T15:44:32 EDT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.apache.poi.util.POILogger.log(int, java.lang.Object, java.lang.Throwable)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoSuchMethodError: 'void org.apache.poi.util.POILogger.log(int, java.lang.Object, java.lang.Throwable)'
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodError: 'void org.apache.poi.util.POILogger.log(int, java.lang.Object, java.lang.Throwable)'
+at org.apache.poi.util.DocumentHelper.trySetXercesSecurityManager(DocumentHelper.java:84)
+at org.apache.poi.util.DocumentHelper.<clinit>(DocumentHelper.java:57)
+at org.apache.poi.openxml4j.opc.internal.ContentTypeManager.parseContentTypesFile(ContentTypeManager.java:376)
+at org.apache.poi.openxml4j.opc.internal.ContentTypeManager.<init>(ContentTypeManager.java:102)
+at org.apache.poi.openxml4j.opc.internal.ZipContentTypeManager.<init>(ZipContentTypeManager.java:54)
+at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:192)
+at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:684)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:275)
+at org.apache.poi.util.PackageHelper.open(PackageHelper.java:37)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:266)
+at com.naveenautomationlabs.AutomationFramework.Utils.ExcelUtils.getRowCount(ExcelUtils.java:23)
+at com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest.getDataFromExcelSheet(YourStoreTest.java:218)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:32 EDT" name="setUp" finished-at="2023-07-05T15:44:36 EDT" duration-ms="4572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginUsingValidCredentials()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:36 EDT" name="validateLoginUsingValidCredentials" finished-at="2023-07-05T15:44:38 EDT" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:38 EDT" name="quit" finished-at="2023-07-05T15:44:38 EDT" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:38 EDT" name="setUp" finished-at="2023-07-05T15:44:42 EDT" duration-ms="4126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateRegistrationSuccess()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:42 EDT" name="validateRegistrationSuccess" finished-at="2023-07-05T15:44:45 EDT" duration-ms="2581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegistrationSuccess -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:45 EDT" name="quit" finished-at="2023-07-05T15:44:45 EDT" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:45 EDT" name="setUp" finished-at="2023-07-05T15:44:49 EDT" duration-ms="4132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateUnitPrice()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:49 EDT" name="validateUnitPrice" finished-at="2023-07-05T15:44:52 EDT" duration-ms="2717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUnitPrice -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:52 EDT" name="quit" finished-at="2023-07-05T15:44:52 EDT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:52 EDT" name="setUp" finished-at="2023-07-05T15:44:56 EDT" duration-ms="4425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateWishListCount()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:44:56 EDT" name="validateWishListCount" finished-at="2023-07-05T15:45:00 EDT" duration-ms="3366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWishListCount -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:45:00 EDT" name="quit" finished-at="2023-07-05T15:45:00 EDT" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:45:00 EDT" name="setUp" finished-at="2023-07-05T15:45:04 EDT" duration-ms="4410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateNavigationInRegistrationPage()[pri:1, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:45:04 EDT" name="validateNavigationInRegistrationPage" finished-at="2023-07-05T15:45:08 EDT" duration-ms="3321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigationInRegistrationPage -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest@247d8ae]" started-at="2023-07-05T15:45:08 EDT" name="quit" finished-at="2023-07-05T15:45:08 EDT" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
