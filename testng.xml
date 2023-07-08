@@ -2,18 +2,22 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		
-		<listener class-name="com.naveenautomationlabs.AutomationFramework.Listeners.CustomListener"></listener>
-		<listener class-name="com.naveenautomationlabs.AutomationFramework.Listeners.ExtentReportListener"></listener>
-		
-		<listener class-name="com.naveenautomationlabs.AutomationFramework.Listeners.TransformerForRetry"></listener>
+
+		<listener
+			class-name="com.naveenautomationlabs.AutomationFramework.Listeners.CustomListener"></listener>
+		<listener
+			class-name="com.naveenautomationlabs.AutomationFramework.Listeners.ExtentReportListener"></listener>
+
+		<listener
+			class-name="com.naveenautomationlabs.AutomationFramework.Listeners.TransformerForRetry"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-		<class name="com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest"/>
+			<class
+				name="com.naveenautomationlabs.AutomationFramework.Tests.YourStoreTest" />
+			<parameter name="browser" value="chrome" />
 
-			
-			
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
