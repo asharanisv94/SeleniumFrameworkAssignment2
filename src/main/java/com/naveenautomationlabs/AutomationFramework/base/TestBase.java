@@ -14,9 +14,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.xml.XmlSuite;
-import org.testng.xml.XmlTest;
 
 import com.naveenautomationlabs.AutomationFramework.Listeners.WebdriverEvents;
 import com.naveenautomationlabs.AutomationFramework.Utils.Browsers;
@@ -61,11 +58,13 @@ public class TestBase {
 	}
 
 
-	public void intialisation(String browser) {		
-		System.out.println(">>>>>>>>>>>>>>"+browser);
-		switch (browser) {
+	public void intialisation() {		
+//	System.out.println("browser parameter value "+browser);
+//	String browser = System.getProperty("browser");
+
+//		switch (browser) {
 		
-//		switch (BROWSER.getBrowserName()) {
+		switch (BROWSER.getBrowserName()) {
 		case "Chrome":
 			wd = WebDriverManager.chromedriver().create();
 			break;

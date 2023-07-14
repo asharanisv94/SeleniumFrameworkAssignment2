@@ -44,10 +44,10 @@ public class YourStoreTest extends TestBase {
 	private AccountLogout accountLogout;
 	private MyWishList wishList;
 
-	@Parameters({ "browser" })
+//	@Parameters({ "browser" })
 	@BeforeMethod
-	public void setUp(String browser) {
-		intialisation(browser);
+	public void setUp() {
+		intialisation();
 		yourStore = new YourStore();
 
 	}
