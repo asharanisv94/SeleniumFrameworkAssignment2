@@ -62,7 +62,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Verify if Monitors page is loaded
-	@Ignore
+	
 	@Test
 	public void validateMonitorsPageIsLoaded() {
 		yourStore.clickComponentBtn();
@@ -72,7 +72,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Validate Login Using InValid Credentials
-	@Ignore
+	
 	@Test
 	public void validateLoginUsingInValidCredentials() {
 		yourStore.clickMyAccountBtn();
@@ -99,7 +99,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// search macbook and add to Wishlist
-	@Ignore
+	
 	@Test
 	public void validateMacBookAddedToWishListSuccessfully() throws InterruptedException {
 		yourStore.clickMyAccountBtn();
@@ -158,7 +158,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Slider
-	@Ignore
+	
 	@Test
 	public void validateSlider() {
 
@@ -184,7 +184,7 @@ public class YourStoreTest extends TestBase {
 	}
 
 	// Add 4 items in checklist and validate Wishlist count
-	@Ignore
+
 	@Test
 	public void validateWishListCount() throws InterruptedException {
 
@@ -205,7 +205,7 @@ public class YourStoreTest extends TestBase {
 		System.out.println(element.getText());
 	}
 	
-	@Ignore
+	
 	@Test(dataProvider = "login_data")
 	public void validateLogin(String username, String Password) {
 		yourStore.clickMyAccountBtn();
